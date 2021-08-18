@@ -1,0 +1,13 @@
+The client-side rendered virtual DOM tree is not matching server-rendered content. This is likely caused by incorrect HTML markup, for example nesting block-level elements inside <p>, or missing <tbody>. Bailing hydration and performing full client-side render.
+
+- Links notícias:
+    - http://www.ogaiense.pt/noticias/noticiario/orlando-monteiro-da-silva-e-o-candidato-da-iniciativa-liberal-0
+    - https://observador.pt/2021/08/10/ex-bastonario-da-ordem-dos-medicos-dentistas-e-o-candidato-da-il-a-gaia/
+    - https://gaiasemanario.pt/category/opiniao/iniciativa-liberal/
+- Menu Mobile
+- font-size e margins mobile
+- font-family
+
+- SEO
+- Mailchimp
+- Google Analytics

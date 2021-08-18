@@ -1,77 +1,66 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+    <div class="index">
+        <v-container>
+            <div class="banner mt-4 mb-16 mx-auto">
+                <v-img src="/banner.jpg" max-width="100%" contain />
+            </div>
+            <ActionList
+                first="realizar"
+                second="gaia"
+                :lines="actionListLines"
+            />
+        </v-container>
+        <div
+            id="candidatos"
+            class="candidatos iniciativa-blue white--text my-16"
+        >
+            <v-container>
+                <h1 class="my-4">Os nossos candidatos</h1>
+                <Candidates :candidates="candidates" />
+            </v-container>
+        </div>
+    </div>
 </template>
+
+<script>
+export default {
+    props: {
+        actionListLines: {
+            type: Array,
+            default: () => ["Fazer isto", "E aquilo"]
+        },
+        candidates: {
+            type: Array,
+            default: () => [
+                {
+                    title: "Orlando Monteiro da Silva",
+                    subtitle: "Câmara Municipal de Gaia",
+                    photo: "https://picsum.photos/600"
+                },
+                {
+                    title: "Rui Leite de Castro",
+                    subtitle: "Assembleia Municipal de Gaia",
+                    photo: "https://picsum.photos/600"
+                },
+                {
+                    title: "Miguel Monteiro dos Santos",
+                    subtitle: "Junta de Freguesia de Vilar de Andorinho",
+                    photo: "https://picsum.photos/600"
+                },
+                {
+                    title: "Pedro Matos",
+                    subtitle:
+                        "Junta de Freguesia de Mafamude e Vilar do Paraíso",
+                    photo: "https://picsum.photos/600"
+                }
+            ]
+        }
+    }
+}
+</script>
+
+<style>
+.index > .banner {
+    max-width: 800px;
+}
+</style>
