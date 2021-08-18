@@ -5,7 +5,10 @@
             <span v-if="second" class="second">{{ second }}</span>
         </p>
         <ul class="lines pa-0">
-            <li v-for="line in lines" :key="line" class="line">✓ {{ line }}</li>
+            <li v-for="line in lines" :key="line" class="line">
+                <span class="check">✓</span>
+                <span class="line">{{ line }}</span>
+            </li>
         </ul>
     </div>
 </template>

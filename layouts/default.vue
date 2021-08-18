@@ -16,24 +16,24 @@
             >
             <v-spacer />
             <v-btn icon href="mailto:gaia@liberal.pt" target="_blank">
-                <v-icon color="white" tag="a">mdi-email</v-icon>
+                <v-icon color="white">mdi-email</v-icon>
             </v-btn>
             <v-btn
                 icon
                 href="https://www.facebook.com/ILiberalGaia"
                 target="_blank"
             >
-                <v-icon color="white" tag="a">mdi-facebook</v-icon>
+                <v-icon color="white">mdi-facebook</v-icon>
             </v-btn>
             <v-btn icon href="https://twitter.com/GaiaLiberal" target="_blank">
-                <v-icon color="white" tag="a">mdi-twitter</v-icon>
+                <v-icon color="white">mdi-twitter</v-icon>
             </v-btn>
             <v-btn
                 icon
                 href="https://www.instagram.com/gaialiberal"
                 target="_blank"
             >
-                <v-icon color="white" tag="a">mdi-instagram</v-icon>
+                <v-icon color="white">mdi-instagram</v-icon>
             </v-btn>
         </v-footer>
     </v-app>
