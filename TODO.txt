@@ -7,6 +7,7 @@
 - font-size e margins mobile
 - font-family
 
+- Mogrify
 - SEO
 - Mailchimp
 - Google Analytics

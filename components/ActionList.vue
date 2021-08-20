@@ -35,7 +35,7 @@ export default {
 <style>
 .action-list > .header {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -52,7 +52,7 @@ export default {
 
 .action-list > .lines {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2em;
     color: #00adef;
     list-style: none;
